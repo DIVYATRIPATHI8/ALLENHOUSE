@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&displau=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/*global tag*/
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 35);
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(21, 19, 19);
+}
+
+/*NAVIGATION*/
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1VW 8VW;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav img {
+    width: 90PX;
+    cursor: pointer;
+}
+
+#menu-btn {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#menu-close{
+    display: initial;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation {
+    display: flex;
+
+}
+
+#menu-btn {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#menu-close{
+    display: none;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30PX;
+
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16PX;
+    font-weight: 500;
+    transition: 0.3sec ease;
+}
+
+na .navigation ul li a:hover {
+    color: rgb(237, 249, 62);
+
+
+}
+
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(code/luxa.org-opacity-changed-minibd.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#home h2 {
+    color: aliceblue;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    width: 50%;
+    color: aliceblue;
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+#home .btn {
+    margin-top: 30px;
+
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#course {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+
+}
+
+#course .course-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320, 1fr));
+    -ms-grid-column-align: 1PX;
+    margin-top: 50px;
+}
+
+#course .courses {
+    text-align: start;
+    background-color: #f9f9ff;
+    height: 100%;
+
+}
+
+#course .courses img {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#course .courses .DETAIL {
+    padding: 15px 15px 0 15px;
+}
+
+/*EXPERTS*/
+#EXPERTS {
+    display: grid;
+    padding: 8VW 8VW 0 8VW;
+    text-align: center;
+    grid-template-columns: auto;
+}
+
+#EXPERTS.EXPERT-BOX {
+    display: grid;
+    grid-auto-columns: auto;
+   
+}
+
+#EXPERTS.EXPERT-BOX.profile {
+    background-color: #fafaf1;
+    padding: 30px 10px;
+}
+
+FOOTER {
+    padding: 8VW;
+    background-color: #15006e;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+}
+
+FOOTER.FOOTER-COL {
+    padding-bottom: 40PX;
+
+}
+
+FOOTER H3 {
+    color: #f9f9ff;
+    font-weight: 600;
+    padding-bottom: 20PX;
+}
+
+FOOTER LI {
+    list-style: none;
+    color: rgb(138, 143, 146);
+    padding: 10PX 0;
+    font-size: 15PX;
+    cursor: pointer;
+    transition: 0.3 ease;
+
+}
+
+FOOTER LI A {
+    text-decoration: NONE;
+    color: rgb(133, 136, 139);
+}
+FOOTER LI A:hover {color: floralwhite;
+
+}
+
+FOOTER LI:hover {
+    color: floralwhite;
+}
+
+@media (max-width:769px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav img {
+        width: 50px;
+
+    }
+
+    #menu-btn {
+
+        display: initial;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    nav.navigation ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 220px;
+        background-color: #fff;
+        height: 100vh;
+        backdrop-filter: blur(4.5px);
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+
+nav.navigation ul li{
+    padding: 20px 0 20px 40px;
+    margin-left: 0px;
+}
+nav.navigation ul li a{ color: #fff;
+
+}
+}
